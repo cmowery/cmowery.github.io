@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Cole Mowery</title>
+</head>
+   <body>
+       <aside>
+           <h1>Cole Mowery</h1>
+           <img id="burger" src="media/images/burger.svg">
+           <nav>
+               <ul>
+                   <li><a class="open" href="index.html">Home</a></li>
+                   <li><a href="#">Exercises</a></li>
+                   <li><a href="http://www.colemowery.com">Other Projects</a></li>
+               </ul>
+           </nav>
+       </aside>
+       <main><div id="parent">
+           <div id="portrait"></div>
+           <div id="biography"><p>
+                Experimental Creative 
+        </p>
+        <p class="normal">
+            I’m nineteen years old, and am attending Creighton University to study Graphic Design Multimedia. In addition to my curricular studies, I’m photographing events and designing graphics for various clubs on campus. I really want to see how far photography can take me in life while maintaining a successful business.
+        </p>
+    <br>           
+        <p>I've been developing my skills for just under five years now. Throughout that time, I've enjoyed playing around with cameras, trying to create images that just feel right. As I’m only a freshman in college, I haven’t taken any photography courses, meaning I’ve largely been experimenting on my own. I’m proud of this fact because it means I’m still very much able to experiment with my camera, and I’m not locked down by ‘rules’.</p>
+    <br>
+        <p>
+            &nbsp; Cole Mowery
+        </p>
+        <table> 
+            <tr><td>Age:</td><td>19</td></tr>
+            <tr><td>Hometown:</td><td>Denver</td></tr>
+            <tr><td>Major:</td><td>Graphic Design: Multimedia, Entrepreneurship, Marketing</td></tr>
+            <tr><td>Year:</td><td>Freshman</td></tr>
+
+        </table>
+    
+    </div>
+    </div>
+            
+                    
+       </main>
+       <script> //Optimization for smartphones and small screens
+           (function() {
+                var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active')
+                    event.preventDefault();
+                })
+            }()
+            )
+       </script>
+   </body>
+</html>
