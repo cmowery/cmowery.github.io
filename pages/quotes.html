@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../style/other.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Computing Quotes</title>
+</head>
+   <body>
+       <aside>
+            <img style="cursor:pointer" src="../media/images/burger.svg" onclick="openNav()">
+            <h1>Cole Mowery</h1>
+           
+           <nav>
+                
+               <ul id="mySidenav" class="sidenav">
+                    <img style="cursor: pointer" src="../media/images/close.svg" onclick="closeNav()">
+                    <br>
+                    <div>
+                        <li><a class="open" href="/index.html">Home</a></li>
+                        <li><a href="../pages/work.html">Exercises</a></li>
+                        <li><a href="http://www.colemowery.com">Other Projects</a></li>
+                    </div>
+               </ul>
+           </nav>
+       </aside>
+       <main>
+            <div id="head">
+               <h1>Computing Quotes</h1>
+               <img src="/media/images/pm.jpg" 
+                onmouseover="document.getElementById('quoteDiv').innerHTML='Done is better than perfect - Peter McKinnon';" onmouseout="document.getElementById('quoteDiv').innerHTML='';">
+                <img src="/media/images/sk.jpg"
+                onmouseover="document.getElementById('quoteDiv').innerHTML='Create something today, even if it sucks - Stephan Kunz';" onmouseout="document.getElementById('quoteDiv').innerHTML='';">
+                <img src="/media/images/sj.jpg"
+                onmouseover="document.getElementById('quoteDiv').innerHTML='Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didnt really do it, they just saw something. It seemed obvious to them after a while. Thats because they were able to connect experiences theyve had and synthesize new things - Steve Jobs';"  onmouseout="document.getElementById('quoteDiv').innerHTML='';">
+            </div>
+            
+        <div id="quoteDiv">
+        </div>
+        <br>
+        <div id="citationDiv">
+        </div>
+    </div>
+            
+                    
+       </main>
+       <script> //Optimization for smartphones and small screens
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            //automatically shows/hides the sidebar when the page reaches a certain size
+            (function() {
+                var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active')
+                    event.preventDefault();
+                })
+            }()
+            )
+       </script>
+   </body>
+</html>

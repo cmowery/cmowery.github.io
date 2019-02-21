@@ -1,0 +1,311 @@
+body, html {
+    height: calc(100% - 2em);
+    margin: 0%;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #8393A7;
+    background-image: radial-gradient(#374355, #8393A7) center center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #d1335b;
+}
+
+aside {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding: 2em;
+    background-color: #374355;
+}
+
+aside img {
+    width: 40px;
+    cursor: pointer;
+}
+
+main img{
+    width: 20%;
+    padding: 2%;
+}
+figure{
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+nav{
+    background: #374355;
+}
+
+.active {
+    position: absolute;
+    display: block;
+    background: #374355;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul img {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    bottom: 10%;
+    font-size: 10%;
+    margin-left: 75%;
+  }
+
+ul li a {
+    
+    text-decoration: none;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: #3D4D65;
+    color: #fff;
+}
+
+main {
+    background: #3D4D65;
+    padding: 1em 1.4em;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+p.normal {
+    font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+    }
+
+    aside img {
+        display: none;
+    }
+
+    a .closebtn {
+        display: none;
+    }
+
+    .sidenav a:hover {
+        color: #fff;
+      }
+
+    #parent {
+        display: 5% flex;
+      }
+    
+    #head {
+    padding: 5%;
+    margin: 2em auto 1em auto;
+    }
+    #quoteDiv {
+        flex: 1;
+        padding: 3%
+        /* Grow to rest of container */
+    }
+
+    #box {
+        float: left;
+        font-size: 25px;
+        width: 15em;
+        height: 15em;
+        /* Changed the background url so that it works */
+        background: url(/media/images/pm.jpg) no-repeat center center;
+        background-size: cover;
+      
+    }
+      /* The CSS below is added to hopefully achieve the effect you're looking for. */
+      
+    #text {
+        display: none;
+        text-align: center;
+        vertical-align: center;
+      }
+    #box:hover #text {
+        display: block;
+      }
+
+    aside {
+        background: #374355;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+        font-weight: bolder;
+    }
+
+    main {
+        background: #3D4D65 url(../media/images/cm\ vector.svg) no-repeat bottom right padding-box;
+        background-size: 40%;
+    }
+
+    figcaption {
+        text-align: center;
+        color: #fff;
+    }
+
+    ul{
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    ul li a:hover {
+        background-color: #D1335B;
+    }
+
+    nav {
+        background: none;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 2em;
+        margin-left: 7%;
+        margin-right: 2%;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+    @media only screen and (min-width: 1280px) {
+
+        body {
+            display: grid;
+            grid-template-columns: 15% auto;
+            padding: 2em;
+        }
+        
+        #box {
+            float: left;
+            font-size: 25px;
+            width: 15em;
+            height: 15em;
+            /* Changed the background url so that it works */
+            background: url(/media/images/pm.jpg) no-repeat center center;
+            background-size: cover;
+          
+          }
+          /* The CSS below is added to hopefully achieve the effect you're looking for. */
+          
+          #text {
+            display: none;
+            text-align: center;
+            vertical-align: center;
+          }
+          #box:hover #text {
+            display: block;
+          }
+    
+        aside img {
+            display: none;
+        }
+    
+        #parent {
+            display: flex;
+          }
+
+          #biography {
+            flex: 1;
+            /* Grow to rest of container */
+            padding: 3%
+          }
+    
+        aside {
+            background: #374355;
+            grid-template-columns: auto;
+            grid-template-rows: 20% auto;
+            padding: 0;
+            font-weight: bolder;
+        }
+    
+        main {
+            padding: 4em;
+            background: #3D4D65 url(../media/images/cm\ vector.svg) no-repeat bottom right padding-box;
+            background-size: 40%;
+        }
+    
+        figcaption {
+            text-align: center;
+            color: #fff;
+        }
+    
+        ul{
+            display: block;
+            margin-top: 2em;
+            position: relative !important;
+            background: none !important;
+            width: 100% !important;
+            font-size: 150%;
+        }
+    
+        ul li a:hover {
+            background-color: #D1335B;
+        }
+
+        nav {
+            background: none;
+        }
+    
+        h1 {
+            font-size: 40px;
+        }
+    
+        p {
+            font-size: 1.5em;
+        }
+        }
+    }
+
