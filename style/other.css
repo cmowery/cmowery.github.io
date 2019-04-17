@@ -5,6 +5,10 @@ body, html {
     color: #fff;
 }
 
+ul{
+    text-transform: uppercase;
+}
+
 body {
     background-color: #8393A7;
     background-image: radial-gradient(#374355, #8393A7) center center;
@@ -44,12 +48,67 @@ aside {
     padding: 2em;
     background-color: #374355;
 }
+h1{
+    font-size: 300%;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 
-img {
+h2{
+    font-size: 200%;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#table {
+    padding: 5% 5% 5% 5%;
+}
+
+table tr td{
+    font-size: 150%;
+}
+
+#head {
+    padding: 5%;
+    margin: 2em auto 1em auto;
+    }
+#outputDiv{
+    padding: 5% 15% 15% 5%;
+    font-size: 150%;
+}
+
+.grade{
+    font-family: "brandon-grotesque", sans-serif;
+    width: 100%;
+    padding: 20% 10% 20% 10%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #8393A7;
+}
+
+.button {
+    font-family: "brandon-grotesque", sans-serif;
+    text-transform: uppercase;
+    background-color: #d1335b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+aside img {
     width: 40px;
     cursor: pointer;
 }
 
+main img{
+    width: 20%;
+    padding: 2%;
+}
 figure{
     margin: 0;
 }
@@ -73,14 +132,13 @@ nav{
     height: 100%;
 }
 
-
-
 ul {
     display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 nav ul img {
     position: absolute;
     top: 3%;
@@ -107,8 +165,6 @@ main {
 
 h1 {
     margin: 0;
-    font-weight: 900;
-    padding: 0% 5% 0% 10%;
 }
 
 p {
@@ -128,7 +184,11 @@ p.normal {
         padding: 2em;
     }
 
-    img {
+    ul{
+        text-transform: uppercase;
+    }
+
+    aside img {
         display: none;
     }
 
@@ -141,23 +201,38 @@ p.normal {
       }
 
     #parent {
-        display: 20% flex;
+        display: 5% flex;
       }
-      #portrait {
-        padding: 10%;
-        border-radius: 0%;
-        background: #fff url(../media/images/portrait.jpg) no-repeat;
-        background-size: cover;
-        width: 20rem;
-        height: 30rem;
-        margin: 2em auto 1em auto;
-        filter: drop-shadow(10px 0px 0px #d1335b);
-      }
-      #biography {
-
+    
+    #head {
+    padding: 5%;
+    margin: 2em auto 1em auto;
+    }
+    #quoteDiv {
         flex: 1;
         padding: 3%
         /* Grow to rest of container */
+    }
+
+    #box {
+        float: left;
+        font-size: 25px;
+        width: 15em;
+        height: 15em;
+        /* Changed the background url so that it works */
+        background: url(/media/images/pm.jpg) no-repeat center center;
+        background-size: cover;
+      
+    }
+      /* The CSS below is added to hopefully achieve the effect you're looking for. */
+      
+    #text {
+        display: none;
+        text-align: center;
+        vertical-align: center;
+      }
+    #box:hover #text {
+        display: block;
       }
 
     aside {
@@ -169,7 +244,6 @@ p.normal {
     }
 
     main {
-        padding: 4em;
         background: #3D4D65 url(../media/images/cm\ vector.svg) no-repeat bottom right padding-box;
         background-size: 40%;
     }
@@ -212,23 +286,34 @@ p.normal {
             grid-template-columns: 15% auto;
             padding: 2em;
         }
+        
+        #box {
+            float: left;
+            font-size: 25px;
+            width: 15em;
+            height: 15em;
+            /* Changed the background url so that it works */
+            background: url(/media/images/pm.jpg) no-repeat center center;
+            background-size: cover;
+          
+          }
+          /* The CSS below is added to hopefully achieve the effect you're looking for. */
+          
+          #text {
+            display: none;
+            text-align: center;
+            vertical-align: center;
+          }
+          #box:hover #text {
+            display: block;
+          }
     
-        img {
+        aside img {
             display: none;
         }
     
         #parent {
             display: flex;
-          }
-          #portrait {
-            padding: 10%;
-            border-radius: 0%;
-            background: #fff url(../media/images/portrait.jpg) no-repeat;
-            image-rendering: optimizeQuality;
-            background-size: cover;
-            width: 20rem;
-            height: 30rem;
-            margin: 2em auto 1em auto;
           }
 
           #biography {
@@ -275,9 +360,6 @@ p.normal {
     
         h1 {
             font-size: 40px;
-            margin-top: 2em;
-            margin-left: 7%;
-            margin-right: 2%;
         }
     
         p {
@@ -285,3 +367,4 @@ p.normal {
         }
         }
     }
+

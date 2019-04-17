@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../style/other.css">
+    <link rel="stylesheet" href="https://use.typekit.net/szz5cks.css">
+    <title>Cole Mowery</title>
+</head>
+   <body>
+       <aside>
+            <img style="cursor:pointer" src="../media/images/burger.svg" onclick="openNav()">
+            <h1>Cole Mowery</h1>
+           
+           <nav>
+                
+               <li id="mySidenav" class="sidenav">
+                    <img style="cursor: pointer" src="../media/images/close.svg" onclick="closeNav()">
+                    <br>
+                    <div>
+                        <ul><a class="open" href="/index.html">Home</a></ul>
+                        <ul><a href="../pages/work.html">Exercises</a></ul>
+                        <ul><a href="http://www.colemowery.com">Other Projects</a></ul>
+                    </div>
+                </li>
+           </nav>
+       </aside>
+       <main>
+           <div id="head"></div>
+           <h1>
+               CSC 121 Projects
+           </h1>
+           <div id="content"><p>
+            <ul id="Links">
+                 <li><a href="/pages/quotes.html">Computing Quotes</a></li>
+                 <li><a href="/pages/grades.html">Grade Calculator</a></li>
+                 <li><a href="/pages/dice.html">Four Dice</a></li>
+             </ul>
+    </div>
+            
+                    
+       </main>
+       <script> //Optimization for smartphones and small screens
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            //automatically shows/hides the sidebar when the page reaches a certain size
+            (function() {
+                var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active')
+                    event.preventDefault();
+                })
+            }()
+            )
+       </script>
+   </body>
+</html>
